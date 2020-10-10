@@ -58,3 +58,24 @@ const content00 = '0123456789';
 //select all '23' and '34'
 const regex00 = /23|34/g;
 const content00 = '122374334996';
+
+//select everything except the defined pattern using '^' (negation)
+const regex00 = /[^0-9aeiou]/gi;
+const content00 = 'I am the complete alphabet! 122374334996';
+
+//select what occurs 1+ times
+const regex00 = /s+/g;
+const content00 = 'Mississipi';
+
+//select what occurs 0+ times (all the match or excluding the last char)
+const regex00 = /gord*/gi;
+const content00 = 'Gordon';
+const content00 = 'Gorky';
+
+//select the first 'i' until the last 'i'
+const regex00 = /t[a-z]*?i/g;
+const content00 = 'titanic';
+
+//select all the text
+const regex00 = /<.*>/;
+const content00 = '<h1>Winter is coming</h1>';
