@@ -39,6 +39,22 @@ const content00 = "Let's have fun with regular expressions!";
 const regex00 = /.un/;
 const content00 = "Let's have fun with regular expressions!";
 
-//select words containing any char between the brackets
+//select words starting with 'b' and finishing with 'g' containing any char between the brackets
 const regex00 = /b[aou]g/;
 const content00 = 'bug, bag';
+
+//select all the vowels between the brackets
+const regex00 = /[aeiou]/gi;
+const content00 = 'James has many pets, like dogs, cats, turtles and fishes.';
+
+//select all the letters of the alphabet
+const regex00 = /[a-z]/gi;
+const content00 = 'I am the complete alphabet!';
+
+//select all the numbers
+const regex00 = /[0-9]/g;
+const content00 = '0123456789';
+
+//select all '23' and '34'
+const regex00 = /23|34/g;
+const content00 = '122374334996';
